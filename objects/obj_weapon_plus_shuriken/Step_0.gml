@@ -24,8 +24,8 @@ if (inst != noone)
 		
 		if (size != 0)
 		{
-			image_xscale += 0.41;
-			image_yscale += 0.41;
+			image_xscale += inst.size_delta;
+			image_yscale += inst.size_delta;
 		}
 		else image_alpha = 1;
 		

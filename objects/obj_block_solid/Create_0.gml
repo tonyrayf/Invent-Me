@@ -1,1 +1,1 @@
-/// @description Solid objs params
+image_alpha = 0;

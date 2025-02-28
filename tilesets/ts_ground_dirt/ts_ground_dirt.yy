@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet1",
+  "%Name":"ts_ground_dirt",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet1",
-  "out_columns":0,
+  "name":"ts_ground_dirt",
+  "out_columns":4,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -17,7 +17,10 @@
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_dirt",
+    "path":"sprites/spr_dirt/spr_dirt.yy",
+  },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
@@ -26,10 +29,10 @@
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
   "tileHeight":16,
-  "tilehsep":0,
-  "tilevsep":0,
-  "tileWidth":16,
+  "tilehsep":1,
+  "tilevsep":1,
+  "tileWidth":14,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":0,
+  "tile_count":10,
 }

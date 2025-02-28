@@ -140,6 +140,3 @@ if (Input.key_weapon_switch)
 }
 
 #endregion
-
-if (instance_exists(obj_weapon_plus_shuriken)) show_debug_message("YES")
-else show_debug_message("NO")

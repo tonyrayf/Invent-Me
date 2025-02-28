@@ -29,5 +29,5 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 var c = c_black;
-var text_scale = 2;
+var text_scale = 1;
 draw_text_transformed_color(x, y - sprite_height / 2 + 4, size, size != 0 ? size * text_scale: text_scale, size != 0 ? size * text_scale : text_scale, 0, c, c, c, c, 1);
