@@ -27,11 +27,7 @@ if (inst != noone)
 			image_xscale -= inst.size_delta;
 			image_yscale -= inst.size_delta;
 		}
-		else
-		{
-			mask_index = No_collision;
-			image_alpha = 0.5;
-		}
+		else instance_destroy();
 	}
 	stuck_in = true;
 }

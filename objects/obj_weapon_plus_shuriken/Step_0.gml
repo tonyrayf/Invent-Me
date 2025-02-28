@@ -21,17 +21,8 @@ if (inst != noone)
 	{
 		if (size >= max_size) exit;
 		
-		
-		if (size != 0)
-		{
-			image_xscale += inst.size_delta;
-			image_yscale += inst.size_delta;
-		}
-		else
-		{
-			mask_index = sprite_index;
-			image_alpha = 1;
-		}
+		image_xscale += inst.size_delta;
+		image_yscale += inst.size_delta;
 		
 		size += 1;
 	}

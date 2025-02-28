@@ -95,6 +95,7 @@
     {"id":{"name":"spr_block_func","path":"sprites/spr_block_func/spr_block_func.yy",},},
     {"id":{"name":"spr_block_solid","path":"sprites/spr_block_solid/spr_block_solid.yy",},},
     {"id":{"name":"spr_dirt","path":"sprites/spr_dirt/spr_dirt.yy",},},
+    {"id":{"name":"spr_number_box_undestructable","path":"sprites/spr_number_box_undestructable/spr_number_box_undestructable.yy",},},
     {"id":{"name":"spr_number_box","path":"sprites/spr_number_box/spr_number_box.yy",},},
     {"id":{"name":"spr_Pixel","path":"sprites/spr_Pixel/spr_Pixel.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
