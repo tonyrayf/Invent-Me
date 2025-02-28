@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_key_input_check",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_key_input_check",
+  "parent":{
+    "name":"Input",
+    "path":"folders/General/Input.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
