@@ -1,6 +1,6 @@
 //Draw self with animation or not
 if (animation_index == -1) draw_self();
-else
+else if (animation_index != -1)
 {
 	var x_ch = animcurve_get_channel(animation_index, "x");
 	var xscale = animcurve_channel_evaluate(x_ch, anim_iterator);
@@ -29,4 +29,5 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 var c = c_black;
-draw_text_transformed_color(x, y - sprite_height / 2 + 3, size, size * 2, size * 2, 0, c, c, c, c, 1);
+var text_scale = 2;
+draw_text_transformed_color(x, y - sprite_height / 2 + 4, size, size != 0 ? size * text_scale: text_scale, size != 0 ? size * text_scale : text_scale, 0, c, c, c, c, 1);

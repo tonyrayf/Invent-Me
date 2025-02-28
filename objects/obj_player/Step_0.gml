@@ -42,16 +42,7 @@ if (place_meeting(x + speed_x, y, global.solid_objects)) //Collision check
 }
 
 
-//Walking
-if (Input.key_walk and place_meeting(x, y + 1, global.solid_objects))
-{
-	speed_x = clamp(speed_x, top_speed_x_left / walk_multiplier, top_speed_x_right / walk_multiplier);
-}
-//Not walking
-else
-{
-	speed_x = clamp(speed_x, top_speed_x_left, top_speed_x_right);
-}
+speed_x = clamp(speed_x, top_speed_x_left, top_speed_x_right);
 
 
 x += speed_x;
@@ -116,5 +107,29 @@ else
 
 
 y += speed_y;
+
+#endregion
+
+
+#region Weapons
+
+if (Input.key_attack)
+{
+	var dir = last_direction_x;
+	with (instance_create_layer(x, y - sprite_height / 2, layer, current_weapon))
+	{
+		speed_x *= dir;
+	}
+}
+if (Input.key_weapon_switch)
+{
+	weapon_index = wrap(weapon_index + 1, weapon.shuriken, weapon.knife);
+	
+	switch (weapon_index)
+	{
+		case weapon.shuriken: current_weapon = obj_weapon_plus_shuriken; break;
+		case weapon.knife: current_weapon = obj_weapon_minus_knife; break;
+	}
+}
 
 #endregion

@@ -36,3 +36,9 @@ can_jump = true;
 animation_index = -1;
 anim_delta_i = 0;
 anim_iterator = 0;
+
+
+//Weapons
+
+weapon_index = weapon.shuriken;
+current_weapon = obj_weapon_plus_shuriken

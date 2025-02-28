@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block_solid",
+  "%Name":"obj_weapon_plus_shuriken",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_block_solid",
+  "name":"obj_weapon_plus_shuriken",
   "overriddenProperties":[],
   "parent":{
-    "name":"Blocks",
-    "path":"folders/Objects/Blocks.yy",
+    "name":"Weapon",
+    "path":"folders/Objects/Weapon.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_block_solid",
-    "path":"sprites/spr_block_solid/spr_block_solid.yy",
+    "name":"spr_weapon_plus_shuriken",
+    "path":"sprites/spr_weapon_plus_shuriken/spr_weapon_plus_shuriken.yy",
   },
   "spriteMaskId":null,
   "visible":true,

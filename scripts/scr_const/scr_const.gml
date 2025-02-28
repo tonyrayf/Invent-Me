@@ -6,3 +6,10 @@
 
 
 #macro VIEW_9__16 9 / 16
+
+
+enum weapon
+{
+	shuriken,
+	knife,
+}
