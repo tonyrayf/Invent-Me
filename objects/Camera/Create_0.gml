@@ -10,8 +10,8 @@ camera_speed_y = 0;
 cam_smooth_multi = 10;  //smooth multiplier
 
 
-offset_x = 50;
-offset_y = -220;
+offset_x = 30;
+offset_y = -70;
 
 if (instance_exists(obj_player))
 {

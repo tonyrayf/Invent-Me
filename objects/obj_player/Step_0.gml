@@ -111,6 +111,13 @@ y += speed_y;
 #endregion
 
 
+#region Sprites and images
+
+image_index = sign(last_direction_x + 1);
+
+#endregion
+
+
 #region Weapons
 
 if (Input.key_attack)
@@ -133,3 +140,6 @@ if (Input.key_weapon_switch)
 }
 
 #endregion
+
+if (instance_exists(obj_weapon_plus_shuriken)) show_debug_message("YES")
+else show_debug_message("NO")
