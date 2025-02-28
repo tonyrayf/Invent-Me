@@ -81,6 +81,8 @@ if (can_jump and !place_meeting(x, y - 1, global.solid_objects))
 		speed_y = -jump_start_speed;
 		alarm_set(0, 0);
 		alarm_set(1, 0);
+		
+		object_do_stretch_animation(ac_player_jump);
 	}
 	
 	//Velocity Cut
@@ -99,10 +101,20 @@ if (place_meeting(x, y + speed_y, global.solid_objects)) //Collision check
 		y += sign(speed_y);
 	}
 	speed_y = 0;
+	
+	if (is_falling)
+	{
+		is_falling = false;
+		
+		object_do_stretch_animation(ac_player_hit_ground);
+	}
+}
+else
+{
+	is_falling = true;
 }
 
 
 y += speed_y;
-
 
 #endregion

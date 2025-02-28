@@ -1,0 +1,26 @@
+{
+  "$GMAnimCurve":"",
+  "%Name":"ac_player_hit_ground",
+  "channels":[
+    {"$GMAnimCurveChannel":"","%Name":"x","colour":4290799884,"name":"x","points":[
+        {"th0":-0.1,"th1":0.1,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
+        {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.08939393,"y":1.2266061,},
+        {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.23333333,"y":1.0303544,},
+        {"th0":-0.1,"th1":0.1,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+    {"$GMAnimCurveChannel":"","%Name":"y","colour":4281083598,"name":"y","points":[
+        {"th0":-0.1,"th1":1.0395974E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
+        {"th0":-0.12703086,"th1":0.058369547,"tv0":0.05234435,"tv1":-0.024051785,"x":0.08636369,"y":0.7960477,},
+        {"th0":-0.101934075,"th1":0.14368469,"tv0":0.025896192,"tv1":-0.036474347,"x":0.23484845,"y":0.9483249,},
+        {"th0":-0.28385925,"th1":0.1,"tv0":0.12127924,"tv1":0.0,"x":1.0,"y":1.0,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+  ],
+  "function":1,
+  "name":"ac_player_hit_ground",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Animation/Player.yy",
+  },
+  "resourceType":"GMAnimCurve",
+  "resourceVersion":"2.0",
+}
