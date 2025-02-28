@@ -19,7 +19,7 @@ speed_y = 0;
 
 acceleration_g = 1;
 
-var jump_height = 2*sprite_get_height(sprite_index);
+var jump_height = 2.5*sprite_get_height(sprite_index);
 def_jump_start_speed = ceil(sqrt(2 * acceleration_g * jump_height) - 0.5);  //Physics formula: v0 = sqrt(2*g*h)
 jump_start_speed = def_jump_start_speed;
 

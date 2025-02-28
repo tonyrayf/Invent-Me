@@ -21,3 +21,12 @@ else
 	
 	draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, 0, image_blend, image_alpha);
 }
+
+
+//Draw my number
+draw_set_font(global.font_main);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+var c = c_black;
+draw_text_transformed_color(x, y - sprite_height / 2 + 3, size, size * 2, size * 2, 0, c, c, c, c, 1);

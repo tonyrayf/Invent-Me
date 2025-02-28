@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"n_anim_template",
+  "name":"n_anim_template",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
