@@ -27,7 +27,11 @@ if (inst != noone)
 			image_xscale += inst.size_delta;
 			image_yscale += inst.size_delta;
 		}
-		else image_alpha = 1;
+		else
+		{
+			mask_index = sprite_index;
+			image_alpha = 1;
+		}
 		
 		size += 1;
 	}

@@ -27,7 +27,7 @@
   "name":"sq_player_hit_ground",
   "parent":{
     "name":"Player",
-    "path":"folders/Animation/Player.yy",
+    "path":"folders/Animation/Stretch/Player.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

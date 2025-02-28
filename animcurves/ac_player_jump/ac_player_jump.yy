@@ -19,7 +19,7 @@
   "name":"ac_player_jump",
   "parent":{
     "name":"Player",
-    "path":"folders/Animation/Player.yy",
+    "path":"folders/Animation/Stretch/Player.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

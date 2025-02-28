@@ -27,7 +27,11 @@ if (inst != noone)
 			image_xscale -= inst.size_delta;
 			image_yscale -= inst.size_delta;
 		}
-		else image_alpha = 0.5;
+		else
+		{
+			mask_index = No_collision;
+			image_alpha = 0.5;
+		}
 	}
 	stuck_in = true;
 }
