@@ -106,7 +106,7 @@ if (place_meeting(x, y + speed_y, global.solid_objects)) //Collision check
 	{
 		is_falling = false;
 		
-		object_do_stretch_animation(ac_player_hit_ground);
+		object_do_stretch_animation(ac_player_hit_ground, 0.75);
 	}
 }
 else

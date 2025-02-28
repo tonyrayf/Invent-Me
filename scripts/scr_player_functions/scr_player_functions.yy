@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_animation_functions",
+  "%Name":"scr_player_functions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_animation_functions",
+  "name":"scr_player_functions",
   "parent":{
     "name":"Functions",
     "path":"folders/Scripts/Functions.yy",

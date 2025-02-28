@@ -33,6 +33,6 @@ can_jump = true;
 
 
 //Animation
-animation_index = 0;
+animation_index = -1;
 anim_delta_i = 0;
 anim_iterator = 0;

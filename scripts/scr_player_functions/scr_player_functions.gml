@@ -6,7 +6,7 @@ function object_do_sequence_animation(sequence)
 	sequence_instance_override_object(sq_struct, object_index, id);
 }
 
-function object_do_stretch_animation(animcurve, time = -1)
+function object_do_stretch_animation(animcurve, time = 1)
 {
 	animation_index = animcurve;
 	
