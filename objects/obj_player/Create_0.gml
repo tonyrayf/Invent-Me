@@ -18,6 +18,7 @@ walk_multiplier = 4; //how many times is walk speed less than regular speed
 speed_y = 0;
 
 acceleration_g = 0.5;
+grav_direction = DOWN;
 
 var jump_height = 1.6*sprite_height;
 def_jump_start_speed = ceil(sqrt(2 * acceleration_g * jump_height) - 0.5);  //Physics formula: v0 = sqrt(2*g*h)
@@ -39,9 +40,3 @@ can_weapon = true;
 animation_index = -1;
 anim_delta_i = 0;
 anim_iterator = 0;
-
-
-//Weapons
-
-weapon_index = weapon.shuriken;
-current_weapon = obj_weapon_plus_shuriken;

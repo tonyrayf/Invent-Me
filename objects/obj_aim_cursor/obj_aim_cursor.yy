@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Cursor",
+  "%Name":"obj_aim_cursor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Cursor",
+  "name":"obj_aim_cursor",
   "overriddenProperties":[],
   "parent":{
-    "name":"General",
-    "path":"folders/General.yy",
+    "name":"Weapon",
+    "path":"folders/Objects/Weapon.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_weapon_minus_knife",
-    "path":"sprites/spr_weapon_minus_knife/spr_weapon_minus_knife.yy",
+    "name":"spr_aim_cursor",
+    "path":"sprites/spr_aim_cursor/spr_aim_cursor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

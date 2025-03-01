@@ -3,7 +3,7 @@ button_text = "НАЧАТЬ";
 
 click_func = function()
 {
-	Cursor.active = false;
+	obj_menu_cursor.active = false;
 	
 	with (instance_create_layer(Camera.x, Camera.y, "General", Cutscene_manager))
 	{

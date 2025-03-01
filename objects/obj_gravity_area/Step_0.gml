@@ -13,7 +13,12 @@ if (instance_place_list(x, y, global.gravity_objects, insts, false))
 			
 			if (object_index == obj_player)
 			{
-				sprite_index = grav == 1 ? spr_sum_stand : spr_sum_stand_reverse;
+				if (grav == DOWN) sprite_index = spr_sum_stand;
+				else
+				{
+					y = bbox_top;
+					sprite_index = spr_sum_stand_reverse;
+				}
 			}
 		}
 	}

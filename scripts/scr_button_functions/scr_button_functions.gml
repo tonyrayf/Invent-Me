@@ -4,9 +4,9 @@
 
 function button_default_func(blend_spd, blend_min)
 {
-	if (Cursor.active)
+	if (obj_menu_cursor.active)
 	{
-		if (place_meeting(x, y, Cursor)) //Наведение на кнопку
+		if (place_meeting(x, y, obj_menu_cursor)) //Наведение на кнопку
 		{
 			blend -= blend_spd; //Затемнение кнопки при наведении
 		

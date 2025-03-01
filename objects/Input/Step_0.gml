@@ -9,4 +9,6 @@ key_jump_release = key_input_check_released(keys_jump);
 
 key_attack = key_input_check_pressed(keys_attack);
 
-key_weapon_switch = key_input_check_pressed(keys_weapon_switch);
+
+mouse_plus  = mouse_check_button_pressed(mouses_plus);
+mouse_minus = mouse_check_button_pressed(mouses_minus);
