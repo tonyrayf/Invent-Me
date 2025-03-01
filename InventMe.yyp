@@ -61,6 +61,7 @@
   "resources":[
     {"id":{"name":"ac_player_hit_ground","path":"animcurves/ac_player_hit_ground/ac_player_hit_ground.yy",},},
     {"id":{"name":"ac_player_jump","path":"animcurves/ac_player_jump/ac_player_jump.yy",},},
+    {"id":{"name":"f_2","path":"fonts/f_2/f_2.yy",},},
     {"id":{"name":"f_main","path":"fonts/f_main/f_main.yy",},},
     {"id":{"name":"n_anim_template","path":"notes/n_anim_template/n_anim_template.yy",},},
     {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
@@ -116,6 +117,7 @@
     {"id":{"name":"spr_number_box","path":"sprites/spr_number_box/spr_number_box.yy",},},
     {"id":{"name":"spr_Pixel","path":"sprites/spr_Pixel/spr_Pixel.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_sum_run_left","path":"sprites/spr_sum_run_left/spr_sum_run_left.yy",},},
     {"id":{"name":"spr_sum_stand","path":"sprites/spr_sum_stand/spr_sum_stand.yy",},},
     {"id":{"name":"spr_sum_throw","path":"sprites/spr_sum_throw/spr_sum_throw.yy",},},
     {"id":{"name":"spr_tree_jfx","path":"sprites/spr_tree_jfx/spr_tree_jfx.yy",},},

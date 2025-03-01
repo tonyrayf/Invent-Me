@@ -30,4 +30,4 @@ draw_set_valign(fa_middle);
 
 var c = c_black;
 var text_scale = 0.75;
-draw_text_transformed_color(x, y - sprite_height / 2, size, size != 0 ? size * text_scale: text_scale, size != 0 ? size * text_scale : text_scale, 0, c, c, c, c, 1);
+draw_text_transformed_color(x, y - sprite_height / 2, size, image_xscale, image_yscale, 0, c, c, c, c, 1);
