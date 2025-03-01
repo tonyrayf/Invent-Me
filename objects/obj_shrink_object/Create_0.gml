@@ -4,6 +4,9 @@ max_size = 5;
 size_delta = 0.2;
 
 
+destructable = true;
+
+
 //Animation
 animation_index = -1;
 anim_delta_i = 0;

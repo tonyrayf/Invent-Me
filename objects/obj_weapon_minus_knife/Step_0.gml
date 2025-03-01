@@ -1,40 +1,22 @@
-if (stuck_in) //Stucked fade out
-{
-	if (alarm_get(0) == -1) alarm_set(0, 3 * game_get_speed(gamespeed_fps));
-	
-	image_alpha = alarm_get(0) / 60;
-	
-	exit;
-}
+nested_begin { event_inherited(); }
+nested_rumbled { exit; }
 
 
 image_angle = point_direction(x, y, x + speed_x, y + speed_y);
 
 
-//Collision check
-var inst = instance_place(x + speed_x, y + speed_y, global.solid_objects);
-if (inst != noone)
+//Shrink objs collision
+var inst = instance_place(x, y, global.shrink_objects);
+if (inst != noone) with (inst)
 {
-	if (inst.object_index == obj_number_box) with (inst)
+	if (size <= min_size) exit;
+	
+	if (size > 1)
 	{
-		if (size <= min_size) exit;
-		
-		
 		size -= 1;
 		
-		if (size != 0)
-		{
-			image_xscale -= inst.size_delta;
-			image_yscale -= inst.size_delta;
-		}
-		else instance_destroy();
+		image_xscale -= size_delta;
+		image_yscale -= size_delta;
 	}
-	stuck_in = true;
+	else if (inst.destructable) instance_destroy();
 }
-
-
-//Movement
-speed_y += acceleration_g;
-
-x += speed_x;
-y += speed_y;

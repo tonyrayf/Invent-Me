@@ -1,36 +1,19 @@
-if (stuck_in) //Stucked fade out
-{
-	if (alarm_get(0) == -1) alarm_set(0, 3 * game_get_speed(gamespeed_fps));
-	
-	image_alpha = alarm_get(0) / 60;
-	
-	exit;
-}
+nested_begin { event_inherited(); }
+nested_rumbled { exit; }
 
 
 image_angle -= 2*abs(speed_x);  //you spin me round...
 
 
-//Collision check
-var inst = instance_place(x + speed_x, y + speed_y, global.solid_objects);
-if (inst != noone)
+//Shrink objs collision
+var inst = instance_place(x, y, global.shrink_objects);
+if (inst != noone) with (inst)
 {
-	stuck_in = true;
+	if (size >= max_size) exit;
 	
-	if (inst.object_index == obj_number_box) with (inst)
-	{
-		if (size >= max_size) exit;
-		
-		image_xscale += inst.size_delta;
-		image_yscale += inst.size_delta;
-		
-		size += 1;
-	}
+	
+	size += 1;
+	
+	image_xscale += size_delta;
+	image_yscale += size_delta;
 }
-
-
-//Movement
-speed_y += acceleration_g;
-
-x += speed_x;
-y += speed_y;

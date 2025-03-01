@@ -4,14 +4,13 @@
 
 function button_default_func(blend_spd, blend_min)
 {
-	if (place_meeting(x, y, obj_cursor)) //Наведение на кнопку
+	if (place_meeting(x, y, Cursor)) //Наведение на кнопку
 	{
 		blend -= blend_spd; //Затемнение кнопки при наведении
 		
 		if (mouse_check_button_released(mb_left))
 		{
 			click_func();
-			audio_play_sound(snd_button_click, 100, false);
 		}
 	}
 	else

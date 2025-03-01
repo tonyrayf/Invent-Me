@@ -8,6 +8,8 @@ image_yscale = camera_get_view_height (view_camera[0]);
 
 image_alpha = 1;
 
+depth = -16000;
+
 
 iterator = 1;
 fade_time = 1;  //time (in seconds)

@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
   "%Name":"obj_number_box",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_number_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interactive Objects",
-    "path":"folders/Objects/Interactive Objects.yy",
+    "name":"Shrink Objects",
+    "path":"folders/Objects/Interactive Objects/Shrink Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_shrink_object",
+    "path":"objects/obj_shrink_object/obj_shrink_object.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
