@@ -32,7 +32,7 @@ if (zoom_active)  // Zoom
 if (follow_player and instance_exists(obj_player))
 {
 	next_x = obj_player.x + offset_x;
-	next_y = obj_player.y + offset_y;
+	next_y = obj_player.y + offset_y * obj_player.grav_direction;
 }
 else
 {

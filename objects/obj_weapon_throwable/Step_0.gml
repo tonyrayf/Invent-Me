@@ -9,7 +9,7 @@ if (stuck_in) //Stucked fade out
 
 
 //Movement
-speed_y += acceleration_g;
+speed_y += acceleration_g * grav_direction;
 
 
 //Collision check

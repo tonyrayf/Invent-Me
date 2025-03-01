@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_player_functions",
+  "%Name":"scr_animation_functions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_player_functions",
+  "name":"scr_animation_functions",
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Animation",
+    "path":"folders/Animation.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

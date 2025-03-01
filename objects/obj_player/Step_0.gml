@@ -53,7 +53,7 @@ x += speed_x;
 #endregion
 #region Y
 
-speed_y += acceleration_g;
+speed_y += acceleration_g * grav_direction;
 
 
 //Jump

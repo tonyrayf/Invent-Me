@@ -153,6 +153,7 @@
     {"id":{"name":"__scribble_tick","path":"scripts/__scribble_tick/__scribble_tick.yy",},},
     {"id":{"name":"draw_text_scribble_ext","path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},},
+    {"id":{"name":"scr_animation_functions","path":"scripts/scr_animation_functions/scr_animation_functions.yy",},},
     {"id":{"name":"scr_button_functions","path":"scripts/scr_button_functions/scr_button_functions.yy",},},
     {"id":{"name":"scr_camera_functions","path":"scripts/scr_camera_functions/scr_camera_functions.yy",},},
     {"id":{"name":"scr_const","path":"scripts/scr_const/scr_const.yy",},},

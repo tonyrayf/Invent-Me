@@ -1,15 +1,12 @@
-function object_do_sequence_animation(sequence)
+function player_gravity_down()
 {
-	var sq = layer_sequence_create(layer, x, y, sequence);
-	var sq_struct = layer_sequence_get_instance(sq);
-	
-	sequence_instance_override_object(sq_struct, object_index, id);
+	y = bbox_bottom;
+	sprite_index = spr_sum_stand;
 }
 
-function object_do_stretch_animation(animcurve, time = 1)
+
+function player_gravity_up()
 {
-	animation_index = animcurve;
-	
-	anim_delta_i = 1 / (time * game_get_speed(gamespeed_fps));
-	anim_iterator = 0;
+	y = bbox_top;
+	sprite_index = spr_sum_stand_reverse;
 }

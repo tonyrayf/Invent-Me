@@ -7,18 +7,14 @@ if (instance_place_list(x, y, global.gravity_objects, insts, false))
 		var inst = ds_list_find_value(insts, i);
 		var grav = grav_direction;
 		
-		if (sign(inst.acceleration_g) != grav) with (inst)
+		if (inst.grav_direction != grav_direction) with (inst)
 		{
-			acceleration_g = grav * abs(acceleration_g);
+			grav_direction = grav;
 			
 			if (object_index == obj_player)
 			{
-				if (grav == DOWN) sprite_index = spr_sum_stand;
-				else
-				{
-					y = bbox_top;
-					sprite_index = spr_sum_stand_reverse;
-				}
+				if (grav_direction == DOWN) player_gravity_down();
+				else player_gravity_up();
 			}
 		}
 	}
