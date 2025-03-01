@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Shrink Objects",
+    "path":"folders/Sprites/Interactive Objects/Shrink Objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

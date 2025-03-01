@@ -3,6 +3,7 @@ global.capture_objects = [obj_capture_object, obj_gravity_switcher];
 
 global.solid_objects = array_concat([obj_block_solid], [obj_shrink_object]);
 
-global.font_main = f_main;
+global.gravity_objects = [obj_player, obj_weapon_throwable];
 
-global.grav = DOWN;
+
+global.font_main = f_main;

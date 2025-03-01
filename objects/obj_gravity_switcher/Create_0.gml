@@ -1,26 +1,17 @@
 event_inherited();
 
 
+my_area = instance_place(x, y, obj_gravity_area);
+
+
 capture_func = function()
 {
 	if (captured_weapon == weapon.shuriken)
 	{
-		global.grav = DOWN;
-		
-		with (obj_player)
-		{
-			sprite_index = spr_sum_stand;
-			y = bbox_bottom;
-		}
+		my_area.grav_direction = DOWN;
 	}
 	else if (captured_weapon == weapon.knife)
 	{
-		global.grav = UP;
-		
-		with (obj_player)
-		{
-			sprite_index = spr_sum_stand_reverse;
-			y = bbox_bottom;
-		}
+		my_area.grav_direction = UP;
 	}
 }

@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gravity_switcher",
+  "%Name":"obj_gravity_area",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gravity_switcher",
+  "name":"obj_gravity_area",
   "overriddenProperties":[],
   "parent":{
     "name":"Gravity Switcher",
     "path":"folders/Objects/Interactive Objects/Capture Objects/Gravity Switcher.yy",
   },
-  "parentObjectId":{
-    "name":"obj_capture_object",
-    "path":"objects/obj_capture_object/obj_capture_object.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gravity_switcher",
-    "path":"sprites/spr_gravity_switcher/spr_gravity_switcher.yy",
+    "name":"spr_gravity_area",
+    "path":"sprites/spr_gravity_area/spr_gravity_area.yy",
   },
   "spriteMaskId":null,
   "visible":true,

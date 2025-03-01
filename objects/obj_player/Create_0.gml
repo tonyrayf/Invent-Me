@@ -32,6 +32,7 @@ active = true;
 can_decelerate = true;
 can_move = true;
 can_jump = true;
+can_weapon = true;
 
 
 //Animation

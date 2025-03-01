@@ -53,14 +53,15 @@ x += speed_x;
 #endregion
 #region Y
 
-speed_y += acceleration_g * global.grav;
+speed_y += acceleration_g;
 
 
 //Jump
-if (can_jump and !place_meeting(x, y - 1 * global.grav, global.solid_objects))
+var grav = sign(acceleration_g);
+if (can_jump and !place_meeting(x, y - grav, global.solid_objects))
 {
 	//Late jump
-	if (place_meeting(x, y + 1 * global.grav, global.solid_objects))
+	if (place_meeting(x, y + grav, global.solid_objects))
 		alarm_set(0, 0.1 * game_get_speed(gamespeed_fps)); //explanation in alarm
 	
 	//Early jump
@@ -70,9 +71,9 @@ if (can_jump and !place_meeting(x, y - 1 * global.grav, global.solid_objects))
 	
 	//Jump activation
 	if (Input.key_jump_press and alarm_get(0) >= 0)
-	or (place_meeting(x, y + 1 * global.grav, global.solid_objects) and alarm_get(1) >= 0)
+	or (place_meeting(x, y + grav, global.solid_objects) and alarm_get(1) >= 0)
 	{
-		speed_y = -jump_start_speed * global.grav;
+		speed_y = -jump_start_speed * grav;
 		alarm_set(0, 0);
 		alarm_set(1, 0);
 		
@@ -123,22 +124,42 @@ image_index = sign(last_direction_x + 1);
 
 #region Weapons
 
-if (Input.key_attack)
+if (can_weapon)
 {
-	var dir = last_direction_x;
-	with (instance_create_layer(x, y - sprite_height / 2, layer, current_weapon))
+	if (Input.key_attack)
 	{
-		speed_x *= dir;
+		var dir = last_direction_x;
+		with (instance_create_layer(x, y - sprite_height / 2, layer, current_weapon))
+		{
+			speed_x *= dir;
+			
+			
+			var inst = instance_nearest(x, y, obj_capture_object);
+			
+			if (inst != noone)
+			{
+				var cam = view_camera[0];
+				var x1 = obj_player.x;
+				var y1 = camera_get_view_y(cam);
+				var x2 = Camera.x + Camera.half_view_width * obj_player.last_direction_x;
+				var y2 = y1 + camera_get_view_height(cam);
+			
+				if (point_in_rectangle(inst.x, inst.y, min(x1, x2), y1, max(x1, x2), y2))
+				{
+					speed_y = - speed_x * tan(point_direction(x, y, inst.x, inst.y) * pi / 180);
+				}
+			}
+		}
 	}
-}
-if (Input.key_weapon_switch)
-{
-	weapon_index = wrap(weapon_index + 1, weapon.shuriken, weapon.knife);
-	
-	switch (weapon_index)
+	if (Input.key_weapon_switch)
 	{
-		case weapon.shuriken: current_weapon = obj_weapon_plus_shuriken; break;
-		case weapon.knife: current_weapon = obj_weapon_minus_knife; break;
+		weapon_index = wrap(weapon_index + 1, weapon.shuriken, weapon.knife);
+	
+		switch (weapon_index)
+		{
+			case weapon.shuriken: current_weapon = obj_weapon_plus_shuriken; break;
+			case weapon.knife: current_weapon = obj_weapon_minus_knife; break;
+		}
 	}
 }
 
