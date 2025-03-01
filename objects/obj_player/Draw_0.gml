@@ -8,8 +8,8 @@ else
 	var y_ch = animcurve_get_channel(animation_index, "y");
 	var yscale = animcurve_channel_evaluate(y_ch, anim_iterator);
 	
-	//var r_ch = animcurve_get_channel(animation_index, "rot");
-	//var rot = animcurve_channel_evaluate(r_ch, anim_iterator);
+	var r_ch = animcurve_get_channel(animation_index, "rot");
+	var rot = animcurve_channel_evaluate(r_ch, anim_iterator);
 	
 	anim_iterator += anim_delta_i;
 	
@@ -19,5 +19,5 @@ else
 		anim_iterator = 0;
 	}
 	
-	draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha);
+	draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, rot, image_blend, image_alpha);
 }

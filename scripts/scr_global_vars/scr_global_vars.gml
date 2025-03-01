@@ -6,4 +6,7 @@ global.solid_objects = array_concat([obj_block_solid], [obj_shrink_object]);
 global.gravity_objects = [obj_player, obj_weapon_throwable];
 
 
+global.weapons_throwable = [obj_weapon_throwable, obj_weapon_plus_shuriken, obj_weapon_minus_knife];
+
+
 global.font_main = f_main;

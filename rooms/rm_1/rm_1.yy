@@ -23,6 +23,7 @@
     {"name":"inst_400202DF","path":"rooms/rm_1/rm_1.yy",},
     {"name":"inst_69C12413","path":"rooms/rm_1/rm_1.yy",},
     {"name":"inst_44C5DD9E","path":"rooms/rm_1/rm_1.yy",},
+    {"name":"inst_1EC42811","path":"rooms/rm_1/rm_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -50,6 +51,7 @@
       ],"layers":[],"name":"VisibleObjects","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"FuncBlocks","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_7CA81688","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7CA81688","objectId":{"name":"obj_block_func","path":"objects/obj_block_func/obj_block_func.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":6.0,"x":366.0,"y":642.0,},
+        {"$GMRInstance":"v1","%Name":"inst_1EC42811","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1EC42811","objectId":{"name":"obj_block_func","path":"objects/obj_block_func/obj_block_func.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":6.0,"x":1052.0,"y":531.0,},
       ],"layers":[],"name":"FuncBlocks","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"SolidBlocks","depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_73157190","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_73157190","objectId":{"name":"obj_block_solid","path":"objects/obj_block_solid/obj_block_solid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1097.0,"scaleY":64.0,"x":0.0,"y":738.0,},

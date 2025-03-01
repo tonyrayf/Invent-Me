@@ -83,6 +83,8 @@
   },
   "name":"InventMe",
   "resources":[
+    {"id":{"name":"ac_player_gravity_switch_down","path":"animcurves/ac_player_gravity_switch_down/ac_player_gravity_switch_down.yy",},},
+    {"id":{"name":"ac_player_gravity_switch_up","path":"animcurves/ac_player_gravity_switch_up/ac_player_gravity_switch_up.yy",},},
     {"id":{"name":"ac_player_hit_ground","path":"animcurves/ac_player_hit_ground/ac_player_hit_ground.yy",},},
     {"id":{"name":"ac_player_jump","path":"animcurves/ac_player_jump/ac_player_jump.yy",},},
     {"id":{"name":"f_bion","path":"fonts/f_bion/f_bion.yy",},},
@@ -237,6 +239,8 @@
     {"id":{"name":"string_width_scribble_ext","path":"scripts/string_width_scribble_ext/string_width_scribble_ext.yy",},},
     {"id":{"name":"string_width_scribble","path":"scripts/string_width_scribble/string_width_scribble.yy",},},
     {"id":{"name":"sq_camera_intro","path":"sequences/sq_camera_intro/sq_camera_intro.yy",},},
+    {"id":{"name":"sq_player_gravity_switch_down","path":"sequences/sq_player_gravity_switch_down/sq_player_gravity_switch_down.yy",},},
+    {"id":{"name":"sq_player_gravity_switch_up","path":"sequences/sq_player_gravity_switch_up/sq_player_gravity_switch_up.yy",},},
     {"id":{"name":"sq_player_hit_ground","path":"sequences/sq_player_hit_ground/sq_player_hit_ground.yy",},},
     {"id":{"name":"sq_player_jump","path":"sequences/sq_player_jump/sq_player_jump.yy",},},
     {"id":{"name":"sq_player_throw","path":"sequences/sq_player_throw/sq_player_throw.yy",},},
