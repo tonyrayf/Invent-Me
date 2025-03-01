@@ -61,7 +61,7 @@
   "resources":[
     {"id":{"name":"ac_player_hit_ground","path":"animcurves/ac_player_hit_ground/ac_player_hit_ground.yy",},},
     {"id":{"name":"ac_player_jump","path":"animcurves/ac_player_jump/ac_player_jump.yy",},},
-    {"id":{"name":"f_2","path":"fonts/f_2/f_2.yy",},},
+    {"id":{"name":"f_bion","path":"fonts/f_bion/f_bion.yy",},},
     {"id":{"name":"f_main","path":"fonts/f_main/f_main.yy",},},
     {"id":{"name":"n_anim_template","path":"notes/n_anim_template/n_anim_template.yy",},},
     {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
@@ -106,6 +106,7 @@
     {"id":{"name":"sq_player_jump","path":"sequences/sq_player_jump/sq_player_jump.yy",},},
     {"id":{"name":"sq_player_throw","path":"sequences/sq_player_throw/sq_player_throw.yy",},},
     {"id":{"name":"sh_layer_alpha","path":"shaders/sh_layer_alpha/sh_layer_alpha.yy",},},
+    {"id":{"name":"sh_text_light","path":"shaders/sh_text_light/sh_text_light.yy",},},
     {"id":{"name":"Icon","path":"sprites/Icon/Icon.yy",},},
     {"id":{"name":"No_collision","path":"sprites/No_collision/No_collision.yy",},},
     {"id":{"name":"spr_block_func","path":"sprites/spr_block_func/spr_block_func.yy",},},
@@ -137,6 +138,6 @@
   ],
   "templateType":"game",
   "TextureGroups":[
-    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":false,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
   ],
 }

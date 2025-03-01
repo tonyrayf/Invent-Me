@@ -13,15 +13,6 @@ cam_smooth_multi = 10;  //smooth multiplier
 offset_x = 30;
 offset_y = -70;
 
-if (instance_exists(obj_player))
-{
-	x = obj_player.x + offset_x;
-	y = obj_player.y + offset_y;
-	
-	x = clamp(x, half_view_width,  room_width  - half_view_width);
-	y = clamp(y, half_view_height, room_height - half_view_height);
-}
-
 
 next_x = x;
 next_y = y;

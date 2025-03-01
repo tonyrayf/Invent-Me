@@ -21,6 +21,7 @@
   "height":40,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"7449f189-df77-4388-8058-8e399080a6b2","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"7449f189-df77-4388-8058-8e399080a6b2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"3a9c99ce-ba0a-449f-87e2-6f8881a7e01f","blendMode":0,"displayName":"default","isLocked":false,"name":"3a9c99ce-ba0a-449f-87e2-6f8881a7e01f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_menu_button",

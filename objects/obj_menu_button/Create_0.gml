@@ -4,7 +4,7 @@ button_scale = 1;
 
 blend = 255;
 
-min_y = y - 2;
+min_y = y - 1;
 
 
 click_func = function() {};
