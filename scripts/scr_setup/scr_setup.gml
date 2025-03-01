@@ -1,0 +1,1 @@
+scribble_font_bake_outline_and_shadow("f_main", "font_main", 1, 1, SCRIBBLE_OUTLINE.NO_OUTLINE, 0, false);

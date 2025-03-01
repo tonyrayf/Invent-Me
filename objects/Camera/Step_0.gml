@@ -34,6 +34,11 @@ if (follow_player and instance_exists(obj_player))
 	next_x = obj_player.x + offset_x;
 	next_y = obj_player.y + offset_y;
 }
+else
+{
+	next_x = x;
+	next_y = y;
+}
 
 
 camera_speed_x = (next_x - x) / cam_smooth_multi;

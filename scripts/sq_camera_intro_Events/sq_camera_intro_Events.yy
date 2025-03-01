@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sq_camera_intro_Events",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sq_camera_intro_Events",
+  "parent":{
+    "name":"Sequences",
+    "path":"folders/Sequences.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

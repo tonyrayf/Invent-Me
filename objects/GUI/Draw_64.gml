@@ -1,5 +1,7 @@
 if (!draw_gui) exit;
 
+draw_set_alpha(lerp(image_alpha, 1, 0.5));
+
 
 if (instance_exists(obj_player))
 {

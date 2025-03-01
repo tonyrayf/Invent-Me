@@ -3,6 +3,7 @@
   "%Name":"Cursor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Cursor",
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cursor",
-    "path":"sprites/spr_cursor/spr_cursor.yy",
+    "name":"spr_weapon_minus_knife",
+    "path":"sprites/spr_weapon_minus_knife/spr_weapon_minus_knife.yy",
   },
   "spriteMaskId":null,
   "visible":true,

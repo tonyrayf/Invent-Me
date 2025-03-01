@@ -1,1 +1,1 @@
-button_text = "Настройки";
+button_text = "НАСТРОЙКИ";

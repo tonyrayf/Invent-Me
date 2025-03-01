@@ -1,4 +1,4 @@
-button_text = "Выйти";
+button_text = "ВЫЙТИ";
 
 click_func = function()
 {
