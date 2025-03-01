@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gravity_switcher",
+  "%Name":"Cutscene_manager",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gravity_switcher",
+  "name":"Cutscene_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Capture Objects",
-    "path":"folders/Objects/Interactive Objects/Capture Objects.yy",
+    "name":"Cutscenes",
+    "path":"folders/General/Cutscenes.yy",
   },
-  "parentObjectId":{
-    "name":"obj_capture_object",
-    "path":"objects/obj_capture_object/obj_capture_object.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_gravity_switcher",
-    "path":"sprites/spr_gravity_switcher/spr_gravity_switcher.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

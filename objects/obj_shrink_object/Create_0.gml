@@ -1,7 +1,7 @@
 size = 1;  //size of a side: 1 = 64, 2 = 128, 3 = 192, ... - NOT ACTUAL, ONLY EXAMPLE!!!
 min_size = 0;
 max_size = 5;
-size_delta = 0.2;
+size_delta = 0.4;
 
 
 destructable = true;

@@ -5,14 +5,7 @@ click_func = function()
 {
 	Cursor.active = false;
 	
-	step_func = function()
-	{
-		var alpha = layer_get_alpha("Menu");
-		
-		layer_set_alpha("Menu", lerp(alpha, 0, 0.1));
-		
-		if (alpha <= 0.05) layer_destroy("Menu");
-	}
+	layer_destroy(layer);
 	
 	with (Camera)
 	{

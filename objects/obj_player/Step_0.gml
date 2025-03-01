@@ -1,3 +1,6 @@
+if (!active) exit;
+
+
 #region X
 
 
@@ -50,14 +53,14 @@ x += speed_x;
 #endregion
 #region Y
 
-speed_y += acceleration_g;
+speed_y += acceleration_g * global.grav;
 
 
 //Jump
-if (can_jump and !place_meeting(x, y - 1, global.solid_objects))
+if (can_jump and !place_meeting(x, y - 1 * global.grav, global.solid_objects))
 {
 	//Late jump
-	if (place_meeting(x, y + 1, global.solid_objects))
+	if (place_meeting(x, y + 1 * global.grav, global.solid_objects))
 		alarm_set(0, 0.1 * game_get_speed(gamespeed_fps)); //explanation in alarm
 	
 	//Early jump
@@ -67,9 +70,9 @@ if (can_jump and !place_meeting(x, y - 1, global.solid_objects))
 	
 	//Jump activation
 	if (Input.key_jump_press and alarm_get(0) >= 0)
-	or (place_meeting(x, y + 1, global.solid_objects) and alarm_get(1) >= 0)
+	or (place_meeting(x, y + 1 * global.grav, global.solid_objects) and alarm_get(1) >= 0)
 	{
-		speed_y = -jump_start_speed;
+		speed_y = -jump_start_speed * global.grav;
 		alarm_set(0, 0);
 		alarm_set(1, 0);
 		

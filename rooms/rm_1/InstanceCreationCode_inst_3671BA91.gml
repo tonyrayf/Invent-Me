@@ -1,1 +1,1 @@
-size = 5;
+shrink_set_size(5);
