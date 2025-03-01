@@ -16,3 +16,11 @@ function layer_set_alpha(_layer, _alpha)
 {
 	layer_get_object_id(_layer).layer_alpha = _alpha;
 }
+
+
+/// @param {string}  _layer  Название слоя
+
+function layer_get_alpha(_layer)
+{
+	return layer_get_object_id(_layer).layer_alpha;
+}

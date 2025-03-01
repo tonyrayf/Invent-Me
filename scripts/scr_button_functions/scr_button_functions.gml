@@ -4,18 +4,21 @@
 
 function button_default_func(blend_spd, blend_min)
 {
-	if (place_meeting(x, y, Cursor)) //Наведение на кнопку
+	if (Cursor.active)
 	{
-		blend -= blend_spd; //Затемнение кнопки при наведении
-		
-		if (mouse_check_button_released(mb_left))
+		if (place_meeting(x, y, Cursor)) //Наведение на кнопку
 		{
-			click_func();
+			blend -= blend_spd; //Затемнение кнопки при наведении
+		
+			if (mouse_check_button_released(mb_left))
+			{
+				click_func();
+			}
 		}
-	}
-	else
-	{
-		blend += blend_spd; //Осветление кнопки при не-наведении
+		else
+		{
+			blend += blend_spd; //Осветление кнопки при не-наведении
+		}
 	}
 
 	step_func();
