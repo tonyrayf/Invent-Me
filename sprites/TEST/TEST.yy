@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Sum",
-    "path":"folders/Sprites/Sum.yy",
+    "name":"General",
+    "path":"folders/Sprites/General.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
